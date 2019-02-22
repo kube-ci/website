@@ -1,0 +1,22 @@
+apiVersion: engine.kube.ci/v1alpha1
+kind: Workflow
+metadata:
+  name: sample-workflow
+  namespace: demo
+spec:
+  serviceAccount: default
+  executionOrder: Parallel
+  allowManualTrigger: true
+  steps:
+  - name: step-echo
+    image: alpine
+    commands:
+    - echo
+    args:
+    - hello world
+  - name: step-wait
+    image: alpine
+    commands:
+    - sleep
+    args:
+    - 10s

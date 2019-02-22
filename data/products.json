@@ -1,0 +1,13 @@
+{
+  "products": {
+    "cli": {
+      "url": "https://github.com/kube-ci/docs.git",
+      "versions": [
+          { "branch": "master", "hostDocs": false, "v-dropdown": true },
+          { "branch": "0.1.0", "hostDocs": true, "v-dropdown": true }
+      ],
+      "latestVersion": "0.1.0",
+      "githubUrl": "https://github.com/kube-ci/docs"
+    }
+  }
+}

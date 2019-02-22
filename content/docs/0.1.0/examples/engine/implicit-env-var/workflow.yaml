@@ -1,0 +1,24 @@
+apiVersion: engine.kube.ci/v1alpha1
+kind: Workflow
+metadata:
+  name: sample-workflow
+  namespace: demo
+spec:
+  serviceAccount: default
+  executionOrder: Serial
+  allowManualTrigger: true
+  steps:
+  - name: step-one
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - echo HOME=$HOME; echo NAMESPACE=$NAMESPACE; echo WORKPLAN=$WORKPLAN;
+  - name: step-two
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - echo HOME=$HOME; echo NAMESPACE=$NAMESPACE; echo WORKPLAN=$WORKPLAN;

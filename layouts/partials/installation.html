@@ -1,0 +1,27 @@
+<div class="installation-pre-area">
+  <ul class="nav nav-tabs tab-install" role="tablist">
+    <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
+    <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content tab-install-data">
+    <div class="tab-pane active" id="linux">
+      <textarea class="installation-pre-code">
+      // Linux amd 64-bit
+      $ wget -O kubeci https://github.com/kube-ci/docs/releases/download/0.8.0-beta.2/kubeci-linux-amd64 \
+      && chmod +x kubeci \c
+      && sudo mv kubeci /usr/local/bin/
+      $ kubeci init
+      </textarea>
+    </div>
+    <div class="tab-pane" id="mac">
+      <textarea class="installation-pre-code">
+      //Mac 64-bit
+      $ wget -O kubeci https://github.com/kube-ci/docs/releases/download/0.8.0-beta.2/kubeci-linux-amd64 \
+      && chmod +x kubeci \
+      && sudo mv kubeci /usr/local/bin/
+      $ kubeci init
+      </textarea>
+    </div>
+  </div>
+</div>

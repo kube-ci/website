@@ -1,0 +1,15 @@
+node_modules
+bower_components
+dist
+tooling/node_modules
+*.idea
+**/.DS_Store
+public
+firebase-debug.log
+.idea/**
+build
+layouts/onebox/single.html
+layouts/signup/single.html
+rev-manifest.json
+repos/
+.firebase/

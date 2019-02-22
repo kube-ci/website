@@ -1,0 +1,17 @@
+apiVersion: engine.kube.ci/v1alpha1
+kind: Workflow
+metadata:
+  name: sample-workflow
+  namespace: demo
+spec:
+  serviceAccount: wf-sa
+  executionOrder: Serial
+  allowManualTrigger: true
+  steps:
+  - name: step-ls-home
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - ls -laR $HOME

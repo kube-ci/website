@@ -1,0 +1,31 @@
+apiVersion: engine.kube.ci/v1alpha1
+kind: Workflow
+metadata:
+  name: sample-workflow
+  namespace: demo
+spec:
+  serviceAccount: default
+  executionOrder: Serial
+  allowManualTrigger: true
+  steps:
+  - name: step-print-dir
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - echo working-dir $(pwd); echo home-dir $HOME
+  - name: step-create
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - touch file-01; touch $HOME/file-02
+  - name: step-list-files
+    image: alpine
+    commands:
+    - sh
+    args:
+    - -c
+    - echo files in working-dir $(ls); echo files in home-dir $(ls $HOME)

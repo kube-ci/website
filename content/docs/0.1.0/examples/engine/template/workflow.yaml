@@ -1,0 +1,14 @@
+apiVersion: engine.kube.ci/v1alpha1
+kind: Workflow
+metadata:
+  name: sample-workflow
+  namespace: demo
+spec:
+  serviceAccount: default
+  executionOrder: Serial
+  allowManualTrigger: true
+  template:
+    name: sample-template
+    arguments:
+      image: alpine
+      cmd: echo hello world

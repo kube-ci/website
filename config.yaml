@@ -1,0 +1,50 @@
+title: Kubernetes native CI system
+baseurl: https://kube.ci
+languageCode: en-us
+pluralizeListTitles: false
+pygmentsStyle: "monokai"
+pygmentsUseClasses: false
+disqusShortname: appscode
+staticdir: "build"
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  author: "authors"
+params:
+  author: KubeCI Authors
+  date_format: Mon, Jan 2, 2006
+  description: Kubernetes native CI system
+  email: kubeci@appscode.com
+  logo: /images/logo.svg
+  twitter_url: https://twitter.com/TheKubeCI
+  slack_url: https://slack.appscode.com/
+  issues_url: https://github.com/kube-ci/project/issues/new
+  youtube_url: https://www.youtube.com/c/appscodeinc
+  docker_url: https://hub.docker.com/u/kubeci
+  contact_email: kubeci@appscode.com
+  sales_email: sales@appscode.com
+  contact_phone: +1 (650) 241-8486
+menu:
+  main:
+    - Name: "Documentation"
+      Weight: 1
+    - Name:
+      Pre: "<i class='fa fa-github'></i>"
+      Weight: 2
+      Identifier: "GitHub"
+      URL: "https://github.com/kube-ci"
+    - Name:
+      Pre: "<i class='fa fa-twitter'></i>"
+      Weight: 3
+      Identifier: "twitter"
+      URL: "https://twitter.com/TheKubeCI"
+    - Name:
+      Pre: "<i class='fa fa-slack'></i>"
+      Weight: 4
+      Identifier: "slack"
+      URL: "https://slack.appscode.com/"
+    - Name:
+      Pre: "<i class='fa fa-forumbee'></i>"
+      Weight: 5
+      Identifier: "forum"
+      URL: "http://discourse.appscode.com"
