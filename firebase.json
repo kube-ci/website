@@ -1,75 +1,78 @@
 {
-  "hosting": {
-    "headers": [
-      {
-        "headers": [
-          {
-            "key": "X-XSS-Protection",
-            "value": "1; mode=block"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          }
-        ],
-        "source": "**"
-      },
-      {
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=360000"
-          }
-        ],
-        "source": "@(images|fonts|js_global)/**"
-      },
-      {
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=300"
-          }
-        ],
-        "source": "404.html"
-      }
-    ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "public": "public",
-    "redirects": [
-      {
-        "source": "/docs/latest/",
-        "destination": "/docs/0.1.0/",
-        "type": 302
-      },
-      {
-        "source": "/docs/latest/welcome/contributing/",
-        "destination": "/docs/0.1.0/welcome/contributing/",
-        "type": 302
-      },
-      {
-        "source": "/docs/latest/concepts/",
-        "destination": "/docs/0.1.0/concepts/",
-        "type": 302
-      },
-      {
-        "source": "/docs/latest/setup/",
-        "destination": "/docs/0.1.0/setup/",
-        "type": 302
-      },
-      {
-        "source": "/docs/latest/guides/",
-        "destination": "/docs/0.1.0/guides/",
-        "type": 302
-      },
-      {
-        "source": "/docs/latest/setup/install/",
-        "destination": "/docs/0.1.0/setup/install/",
-        "type": 302
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "hugo",
+      "headers": [
+        {
+          "headers": [
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            }
+          ],
+          "source": "**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=360000"
+            }
+          ],
+          "source": "@(images|fonts|js_global)/**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=300"
+            }
+          ],
+          "source": "404.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "public": "public",
+      "redirects": [
+        {
+          "source": "/docs/latest/",
+          "destination": "/docs/0.1.0/",
+          "type": 302
+        },
+        {
+          "source": "/docs/latest/welcome/contributing/",
+          "destination": "/docs/0.1.0/welcome/contributing/",
+          "type": 302
+        },
+        {
+          "source": "/docs/latest/concepts/",
+          "destination": "/docs/0.1.0/concepts/",
+          "type": 302
+        },
+        {
+          "source": "/docs/latest/setup/",
+          "destination": "/docs/0.1.0/setup/",
+          "type": 302
+        },
+        {
+          "source": "/docs/latest/guides/",
+          "destination": "/docs/0.1.0/guides/",
+          "type": 302
+        },
+        {
+          "source": "/docs/latest/setup/install/",
+          "destination": "/docs/0.1.0/setup/install/",
+          "type": 302
+        }
+      ]
+    }
+  ]
 }

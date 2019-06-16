@@ -1,6 +1,14 @@
 {
   "projects": {
-    "default": "kubeci"
+    "default": "appscode-domains"
+  },
+  "targets": {
+    "appscode-domains": {
+      "hosting": {
+        "hugo": [
+          "kubeci-prod"
+        ]
+      }
+    }
   }
 }
-

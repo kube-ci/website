@@ -42,5 +42,8 @@
     "sass-lint": "^1.3.3",
     "watchify": "^3.11.1"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "natives": "1.1.3"
+  }
 }
